@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Link Card</title>
+
+    <style>
+        /* 1. Apply box-sizing globally to manage widths easily */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        /* 2. Style the page background */
+        body {
+            background-color: #0f0f14;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Centers the card vertically on the screen */
+        }
+
+        /* 3. Style your Main Card using the Box Model */
+        .profile-card {
+            background-color: #1e1e2e;
+            width: 350px;
+            border: 2px solid #313244;
+            border-radius: 15px;
+            text-align: center;
+
+            /* TASK: Add padding inside the card so elements have breathing room */
+            padding: 30px;
+        }
+
+        /* 4. Style your profile picture box */
+        .profile-pic {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            /* Cuts the square photo into a perfect circle */
+            object-fit: cover;
+            /* Centers and crops your photo inside the circle */
+            margin: 0 auto 15px auto;
+            /* Centered layout with bottom spacing */
+            display: block;
+            /* Treats the image as a structural box block */
+            border: 3px solid #89b4fa;
+            /* Optional: Adds a cool glowing border ring */
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 8px;
+            /* Box model spacing below header */
+        }
+
+        .bio {
+            color: #a6adc8;
+            font-size: 14px;
+            margin-bottom: 25px;
+            /* Space before the links start */
+        }
+
+        /* 5. Style the individual link buttons */
+        .link-btn {
+            display: block;
+            /* Forces links to stack on top of each other */
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #313244;
+            border: 1px solid #45475a;
+            border-radius: 8px;
+            font-weight: bold;
+
+            /* TASK: Use padding to make the button thicker and easier to click */
+            padding: 12px;
+
+            /* TASK: Use margin to separate the buttons from each other */
+            margin-bottom: 12px;
+        }
+
+        /* Hover effect for an interactive look */
+        .link-btn:hover {
+            background-color: #45475a;
+            border-color: #89b4fa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+        <img class="profile-pic" src="profile.jpg" alt="My Profile Picture">
+        <h1>MALIK DEV 5</h1>
+        <p class="bio">Web Developer | Learning MERN Stack</p>
+
+        <div class="links-container">
+            <a href="https://www.fiverr.com/malik_dev_5" class="link-btn" target="_blank">My Fiverr Profile</a>
+            <a href="mailto:malikmukarram758@gmail.com" class="link-btn">Email Me</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
